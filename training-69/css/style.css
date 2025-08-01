@@ -1,0 +1,29 @@
+body {
+	background: #242424;
+}
+
+.block {
+	background: #fff;
+	width: 800px;
+	min-height: 100px;
+	border-radius: 20px;
+	position: fixed;
+	left: 50%;
+	bottom: 100px;
+	right: 50px;
+}
+
+.kryg {
+	background: #ff3939;
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+	position: relative;
+	bottom: 50px;
+	left: 10%;
+}
+
+p {
+	color: white;
+	font-size: 50px;
+}
