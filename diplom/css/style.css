@@ -1,0 +1,430 @@
+@import "fonts.css";
+@import "reset.css";
+@import "global.css";
+
+@import "header.css";
+@import "footer.css";
+
+/* ============================================ */
+
+.hero {
+	padding-bottom: 75px;
+}
+
+
+.swiper {
+	border-radius: 32px;
+}
+
+.hero__slide {
+	background: #DCE5E2;
+	border-radius: 32px;
+}
+
+.hero__slide img {
+	width: 100%;
+}
+
+
+.hero__slider-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__content {
+	max-width: 776px;
+	width: 100%;
+	padding-left: 56px;
+}
+
+.hero__title {
+	font-family: var(--second-family);
+	font-size: 58px;
+	padding-bottom: 19px;
+}
+
+.hero__text {
+	font-size: 16px;
+	padding-bottom: 30px;
+	max-width: 565px;
+}
+
+.hero__button {
+	width: 100%;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	text-transform: capitalize;
+	border: 1px solid #000;
+	border-radius: 200px;
+	max-width: 170px;
+	padding: 14px 53px;
+}
+
+.hero__image {
+	width: 100%;
+}
+
+.hero__pagination {
+	display: flex;
+	gap: 34px;
+	justify-content: center;
+	padding-bottom: 18px;
+}
+
+
+.swiper-pagination-bullet {
+	max-width: 194px;
+	height: 2px;
+	border-radius: 0px;
+	width: 100%;
+	opacity: 1;
+}
+
+.hero__prev {
+	margin-left: 19px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	width: 14px;
+	height: 26px;
+}
+
+.hero__next {
+	margin-right: 19px;
+}
+
+
+/* ================================================================= */
+
+.categories {}
+
+.categories__inner {
+	padding-bottom: 78px;
+}
+
+.categories__intro {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.categories__title {
+	padding-bottom: 9px;
+}
+
+.title {
+	font-family: var(--second-family);
+	font-size: 42px;
+	line-height: 125%;
+	text-align: center;
+}
+
+.categories__text {
+	max-width: 628px;
+	padding-bottom: 55px;
+}
+
+.categories__grid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: auto auto;
+	align-items: start;
+	gap: 16px;
+}
+
+.category__card {
+	display: flex;
+	box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.25);
+	max-width: 312px;
+	max-height: 792px;
+	width: 100%;
+	height: 100%;
+}
+
+.category-card--laptops {
+	max-width: 639px;
+	max-height: 472px;
+	flex-direction: column;
+	align-items: end;
+	padding: 0px 42px 0px 42px;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.category-card--laptops img {
+	max-width: 500px;
+	width: 100%;
+}
+
+.category-card__information {
+	text-align: right;
+	width: 100%;
+
+}
+
+.category-card__information--laptops {
+	max-width: 300px;
+}
+
+.category-card__title {
+	font-size: 15px;
+	line-height: 128%;
+}
+
+.category-card__desc {
+	font-family: var(--second-family);
+	font-size: 32px;
+
+}
+
+.category-card--watches {
+	max-width: 639px;
+	max-height: 270px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: 0px 42px 0px 42px;
+	margin-top: 56px;
+
+
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.category-card--watches img {
+	width: 100%;
+}
+
+.category-card__information--watches {
+	max-width: 174px;
+}
+
+.category-card--phones {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	overflow: hidden;
+
+	grid-column: 2;
+	grid-row: 1 / 3;
+}
+
+.category-card--phones img {
+	transform: translateX(15%);
+}
+
+.category-card__information--phones {
+	margin-top: 41px;
+	text-align: center;
+	max-width: 296px;
+}
+
+.category-card--tablets {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column-reverse;
+	overflow: hidden;
+	grid-column: 3;
+	grid-row: 1 / 3;
+}
+
+.category-card--tablets img {
+	width: 100%;
+}
+
+.category-card__information--tablets {
+	text-align: center;
+	max-width: 309px;
+	max-height: 95px;
+	margin-bottom: 42px;
+}
+
+/* ================================================================== */
+/* ================================================================== */
+/* ================================================================== */
+@media (max-width: 1000px) {
+
+	.hero__title {
+		padding-top: 20px;
+		font-size: 47px;
+		padding-bottom: 10px;
+	}
+
+	.hero__text {
+		font-size: 16px;
+		padding-bottom: 15px;
+	}
+
+	.hero__button {
+		margin-bottom: 18px;
+	}
+
+}
+
+@media (max-width: 900px) {
+
+	.nav {
+		position: fixed;
+		inset: 0;
+		z-index: 10;
+		background: #fff;
+		padding: 26vh 15px 30px;
+		font-size: 24px;
+
+		transform: translateY(-50%);
+		opacity: 0;
+		visibility: hidden;
+		transition: var(--transition);
+	}
+
+	.nav__list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header__action {
+		gap: 5px;
+	}
+
+	.header__basket svg {
+		width: 100%;
+	}
+
+	.body--opened-menu .nav {
+		transform: translateY(0%);
+		opacity: 1;
+		visibility: visible;
+	}
+
+	.burger-icon {
+		display: flex;
+	}
+
+	/* =========================================== */
+	.hero__content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding: 30px;
+	}
+
+	.hero__title {
+		font-size: 60px;
+		padding-bottom: 35px;
+	}
+
+	.hero__text {
+		font-size: 24px;
+		padding-bottom: 40px;
+	}
+
+	.hero__button {
+		max-width: 250px;
+	}
+
+	.hero__image {
+		display: none;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.hero__pagination {
+		padding: 0 10px 15px 10px;
+	}
+
+	/* ================================ */
+	.footer__inner {
+		padding: 25px 0px 40px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto;
+		text-align: center;
+		justify-items: center;
+	}
+
+	.footer__about {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-right: 0px;
+		grid-column: 1 / -1;
+	}
+
+	.footer__column {
+		width: 100%;
+	}
+
+
+	.footer__title {
+		padding: 20px 0 10px;
+	}
+
+	.footer__list {
+		gap: 10px;
+	}
+}
+
+@media (max-width: 600px) {
+
+	/* =========================================== */
+
+	.hero__content {
+		padding: 30px;
+	}
+
+	.hero__title {
+		font-size: 50px;
+		padding-bottom: 15px;
+	}
+
+	.hero__text {
+		font-size: 20px;
+		padding-bottom: 30px;
+	}
+
+	/* =========================================== */
+	.hero__pagination {
+		gap: 15px;
+	}
+}
+
+@media (max-width: 450px) {
+
+	/* =========================================== */
+
+	.hero__content {
+		padding: 10px;
+	}
+
+	.hero__title {
+		font-size: 38px;
+		padding-bottom: 15px;
+	}
+
+	.hero__text {
+		font-size: 16px;
+		padding-bottom: 20px;
+	}
+
+	.hero__button {
+		max-width: 150px;
+	}
+
+	/* =========================================== */
+	.hero__pagination {
+		padding-bottom: 5px;
+	}
+
+}
