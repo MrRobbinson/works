@@ -30,7 +30,6 @@
 .nav__item {
 	text-transform: uppercase;
 	position: relative;
-
 }
 
 .nav__item--dropdown {}
@@ -67,6 +66,7 @@
 	visibility: visible;
 	max-width: 170px;
 	transform: translateY(0px);
+
 }
 
 .nav__item--dropdown>.nav__link::after {
